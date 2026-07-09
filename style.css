@@ -1,0 +1,227 @@
+:root {
+  --bg: #ffffff;
+  --text: #242424;
+  --muted: #6f6f6f;
+  --line: #e7e3de;
+  --accent: #8a6f5a;
+  --soft: #f7f4f1;
+  --max: 980px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 26px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text);
+  border-bottom: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+nav a {
+  border-bottom: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+nav a.active,
+nav a:hover {
+  color: var(--text);
+}
+
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 68px 22px 40px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 298px;
+  gap: 68px;
+  align-items: start;
+  margin-bottom: 74px;
+}
+
+.hero h1,
+.page-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: clamp(42px, 8vw, 76px);
+  line-height: 1.05;
+  margin: 0 0 34px;
+}
+
+.affiliation {
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.85;
+  margin-bottom: 24px;
+}
+
+.portrait {
+  width: 298px;
+  max-width: 100%;
+  border-radius: 0;
+  display: block;
+}
+
+.section {
+  margin: 0 0 54px;
+}
+
+.section h2,
+.year,
+.subheading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin: 0 0 18px;
+}
+
+.subheading {
+  font-size: 24px;
+  margin: 42px 0 16px;
+}
+
+.year {
+  font-size: 24px;
+  margin: 46px 0 18px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.item {
+  margin: 0 0 24px;
+}
+
+.item-title {
+  margin: 0 0 4px;
+  font-weight: 500;
+}
+
+.item-meta {
+  margin: 0;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--soft);
+  padding: 28px;
+  border: 1px solid var(--line);
+  margin: 22px 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 11px 18px;
+  border: 1px solid var(--text);
+  color: var(--text);
+}
+
+.button:hover {
+  background: var(--text);
+  color: #fff;
+}
+
+footer {
+  max-width: var(--max);
+  margin: 30px auto 0;
+  padding: 36px 22px 56px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .nav-wrap {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 18px;
+  }
+
+  nav {
+    justify-content: flex-start;
+    gap: 12px 16px;
+  }
+
+  main {
+    padding: 42px 18px 30px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .portrait {
+    width: 230px;
+  }
+}
