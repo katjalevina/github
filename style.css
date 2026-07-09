@@ -1,67 +1,60 @@
+/* RESET EVERYTHING TO PLAIN WHITE + NORMAL BLACK */
+
 :root {
-  --text: #111111;
-  --muted: #111111;
-  --line: #e6e6e6;
+  --text: #000000;
   --background: #ffffff;
+  --line: #dddddd;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  color: #000000 !important;
+  background-color: transparent;
+  opacity: 1 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 400 !important;
+  text-shadow: none !important;
+  -webkit-text-fill-color: #000000 !important;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--background);
-  color: var(--text) !important;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #000000 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 400 !important;
   line-height: 1.7;
-}
-
-/* Force all normal text to be dark */
-
-body,
-main,
-section,
-div,
-p,
-li,
-span,
-h1,
-h2,
-h3,
-h4,
-.item-title,
-.item-meta,
-.year,
-.page-title,
-.section h2,
-.card,
-.footer-grid,
-.logo,
-nav a {
-  color: #111111 !important;
+  opacity: 1 !important;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 /* Links */
 
-a {
-  color: #111111 !important;
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-
-a:hover {
-  color: #000000 !important;
+  opacity: 1 !important;
 }
 
 /* Header and navigation */
 
 .site-header {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
   border-bottom: 1px solid var(--line);
-  background: #ffffff;
 }
 
 .nav-wrap {
@@ -72,14 +65,14 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  background: #ffffff !important;
 }
 
 .logo {
   font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.02em;
   text-decoration: none;
   white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
 nav {
@@ -91,7 +84,6 @@ nav {
 
 nav a {
   font-size: 14px;
-  font-weight: 400;
   letter-spacing: 0.04em;
   text-decoration: none;
 }
@@ -102,12 +94,14 @@ nav a:hover {
   text-underline-offset: 5px;
 }
 
-/* General page layout */
+/* Main layout */
 
 main {
   max-width: 1050px;
   margin: 0 auto;
   padding: 0 30px;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
 }
 
 /* Home page */
@@ -118,6 +112,7 @@ main {
   grid-template-columns: 280px 1fr;
   gap: 55px;
   align-items: start;
+  background: #ffffff !important;
 }
 
 .hero-photo {
@@ -142,17 +137,15 @@ main {
 .page-title {
   font-size: 32px;
   line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 0.02em;
   margin: 0 0 32px;
   white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
 .affiliation {
   font-size: 15px;
   line-height: 1.6;
   margin: 0 0 28px;
-  font-weight: 400;
 }
 
 .lead,
@@ -162,7 +155,6 @@ main {
   line-height: 1.75;
   margin: 0 0 18px;
   text-align: justify;
-  font-weight: 400;
 }
 
 /* Other pages */
@@ -174,7 +166,6 @@ main {
 
 .page-title span {
   font-size: 0.45em !important;
-  font-weight: 400 !important;
 }
 
 .section {
@@ -183,14 +174,12 @@ main {
 
 .section h2 {
   font-size: 22px;
-  font-weight: 400;
   letter-spacing: 0.02em;
   margin: 0 0 24px;
 }
 
 .year {
   font-size: 20px;
-  font-weight: 400;
   margin: 38px 0 18px;
 }
 
@@ -203,46 +192,39 @@ main {
   font-size: 17px;
   line-height: 1.5;
   margin: 0 0 6px;
-  font-weight: 400;
 }
 
 .item-meta {
   font-size: 15px;
   line-height: 1.6;
   margin: 0;
-  font-weight: 400;
 }
 
-.section p,
-.card p,
-main p,
-main li {
-  font-weight: 400;
-}
-
-/* CV card / button */
+/* CV page */
 
 .card {
   border: 1px solid var(--line);
   padding: 28px;
   margin-top: 20px;
+  background: #ffffff !important;
 }
 
 .button {
   display: inline-block;
-  border: 1px solid #111111;
+  border: 1px solid #000000;
   padding: 10px 18px;
   margin-top: 12px;
   text-decoration: none;
   font-size: 15px;
-  font-weight: 400;
-  color: #111111 !important;
-  background: #ffffff;
+  background: #ffffff !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
 }
 
 .button:hover {
-  background: #111111;
+  background: #000000 !important;
   color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 
 /* Footer */
@@ -250,6 +232,8 @@ main li {
 footer {
   border-top: 1px solid var(--line);
   margin-top: 80px;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
 }
 
 .footer-grid {
@@ -260,28 +244,10 @@ footer {
   justify-content: space-between;
   gap: 30px;
   font-size: 14px;
-  font-weight: 400;
+  background: #ffffff !important;
 }
 
-/* Extra strong override for pale text on subpages */
-
-body main h1,
-body main h2,
-body main h3,
-body main p,
-body main div,
-body main span,
-body main li,
-body .item-title,
-body .item-meta,
-body .year,
-body .section h2 {
-  color: #111111 !important;
-  font-weight: 400 !important;
-  opacity: 1 !important;
-}
-
-/* Mobile version */
+/* Mobile */
 
 @media (max-width: 800px) {
   .nav-wrap {
