@@ -5,7 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ekaterina Levina | Linguistics</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      color: #222;
+      background: #fff;
+    }
+
+    .hero {
+      max-width: 1050px;
+      margin: 70px auto 80px;
+      padding: 0 30px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .portrait {
+      width: 260px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      max-width: 720px;
+      display: block;
+    }
+
+    .hero-text h1 {
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 300;
+      margin: 0 0 22px;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
+    }
+
+    .affiliation {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .lead,
+    .hero-text p {
+      font-size: 16px;
+      line-height: 1.75;
+      margin: 0 0 18px;
+      text-align: justify;
+    }
+
+    .hero-text a {
+      color: #222;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 45px;
+      }
+
+      .portrait {
+        width: 220px;
+      }
+
+      .hero-text h1 {
+        font-size: 28px;
+        white-space: normal;
+      }
+
+      .lead,
+      .hero-text p {
+        text-align: left;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="nav-wrap">
@@ -22,22 +106,40 @@
 
   <main>
     <section class="hero">
-      <div>
-        <h1>Ekaterina Levina</h1>
-        <p class="affiliation">Department of Linguistics<br>University of Vienna<br>Email: <a href="mailto:ekaterina.levina@univie.ac.at">ekaterina.levina@univie.ac.at</a></p>
-
-        <p class="lead">I am a theoretical linguist. My work bridges semantics, syntax, and pragmatics with a focus on cross-linguistic and typological research in these areas. My current projects investigate definites and weak definites, their anaphoric uptake, attributive and external possessives as well as argument realization, verb alternations and conceptualization of events. My further interests include modality, evidentiality and philosophy of language.</p>
-
-        <p>My research is centered around European and non-European languages spoken in North and South America, Oceania, and Africa.</p>
-
-        <p>I am currently a PostDoc at the project <a href="https://sfb-redundancy-deficiency.uni-graz.at/" target="_blank" rel="noopener">Language between redundancy and deficiency</a>. I am affiliated with the subproject “The (non-)deficiency and (non-)redundancy of clitic pronouns” at the Linguistics Department of the University of Vienna.</p>
-
-        <p>I received my PhD in Linguistics at the University of Texas at Austin. Before that, I received my M.A. in Theoretical Linguistics from the Humboldt University of Berlin in 2014 and my B.A. in German Linguistics and Spanish from the same university. In 2006, I graduated in German as a Foreign Language (comparable to B.A.) from the University of Leipzig. I also hold a degree in Law (comparable to J.D.) from Saint Petersburg Polytechnic University (2004).</p>
-
-        <p>You can find my full CV <a href="cv.html">here</a>.</p>
+      <div class="hero-photo">
+        <img class="portrait" src="pic.jpeg" alt="Portrait of Ekaterina Levina">
       </div>
 
-        <img class="portrait" src="pic.jpeg" alt="Portrait of Ekaterina Levina">    </section>
+      <div class="hero-text">
+        <h1>Ekaterina Levina</h1>
+
+        <p class="affiliation">
+          Department of Linguistics<br>
+          University of Vienna<br>
+          Email: <a href="mailto:ekaterina.levina@univie.ac.at">ekaterina.levina@univie.ac.at</a>
+        </p>
+
+        <p class="lead">
+          I am a theoretical linguist. My work bridges semantics, syntax, and pragmatics with a focus on cross-linguistic and typological research in these areas. My current projects investigate definites and weak definites, their anaphoric uptake, attributive and external possessives as well as argument realization, verb alternations and conceptualization of events. My further interests include modality, evidentiality and philosophy of language.
+        </p>
+
+        <p>
+          My research is centered around European and non-European languages spoken in North and South America, Oceania, and Africa.
+        </p>
+
+        <p>
+          I am currently a PostDoc at the project <a href="https://sfb-redundancy-deficiency.uni-graz.at/" target="_blank" rel="noopener">Language between redundancy and deficiency</a>. I am affiliated with the subproject “The (non-)deficiency and (non-)redundancy of clitic pronouns” at the Linguistics Department of the University of Vienna.
+        </p>
+
+        <p>
+          I received my PhD in Linguistics at the University of Texas at Austin. Before that, I received my M.A. in Theoretical Linguistics from the Humboldt University of Berlin in 2014 and my B.A. in German Linguistics and Spanish from the same university. In 2006, I graduated in German as a Foreign Language (comparable to B.A.) from the University of Leipzig. I also hold a degree in Law (comparable to J.D.) from Saint Petersburg Polytechnic University (2004).
+        </p>
+
+        <p>
+          You can find my full CV <a href="cv.html">here</a>.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer>
