@@ -86,11 +86,13 @@ main {
 }
 
 .hero {
+  max-width: 1050px;
+  margin: 70px auto 80px;
+  padding: 0 30px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 298px;
-  gap: 68px;
+  grid-template-columns: 280px 1fr;
+  gap: 55px;
   align-items: start;
-  margin-bottom: 74px;
 }
 
 .hero h1,
@@ -116,10 +118,11 @@ main {
 }
 
 .portrait {
-  width: 298px;
+  width: 260px;
   max-width: 100%;
-  border-radius: 0;
+  height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .section {
