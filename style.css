@@ -168,6 +168,11 @@ main {
   font-size: 0.45em !important;
 }
 
+.selection-label {
+  font-size: 0.45em !important;
+  font-weight: 400 !important;
+}
+
 .section {
   margin-bottom: 48px;
 }
@@ -188,16 +193,39 @@ main {
   padding: 18px 0;
 }
 
+/* Talk, paper, and class/course titles */
+
 .item-title {
   font-size: 17px;
   line-height: 1.5;
   margin: 0 0 6px;
+  font-weight: 700 !important;
 }
+
+.item-title,
+.item-title * {
+  font-weight: 700 !important;
+}
+
+/* Description / venue / metadata stays normal */
 
 .item-meta {
   font-size: 15px;
   line-height: 1.6;
   margin: 0;
+  font-weight: 400 !important;
+}
+
+.item-meta,
+.item-meta * {
+  font-weight: 400 !important;
+}
+
+/* General boldface */
+
+strong,
+b {
+  font-weight: 700 !important;
 }
 
 /* CV page */
